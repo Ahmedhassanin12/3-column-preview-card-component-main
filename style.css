@@ -1,0 +1,132 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 62.5%;
+    font-family: 'Red Hat Text', sans-serif;
+}
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 800px;
+    height: 400px;
+    
+}
+.grid .child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius:8px ;
+    border-bottom-left-radius:8px ;
+}
+.two {
+    background-color:hsl(184, 100%, 22%) ;
+}
+.three {
+    background-color:hsl(179, 100%, 13%) ;
+    border-top-right-radius:8px ;
+    border-bottom-right-radius:8px ;
+}
+.child svg {
+    position: absolute;
+    top: 40px ;
+    left: 30px;
+}
+.child h2 {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    font-weight: 700;
+}
+.child p {
+    color: white;
+    padding-left: 30px;
+    padding-right: 40px;
+    padding-top: 30px;
+    font-size: 13px;
+    opacity: .7;
+    line-height: 1.4;
+    font-weight: 400;
+}
+.child a {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 6px 12px;
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    text-transform: capitalize;
+    background-color: white;
+    border-radius: 12px;
+}
+.one a {
+    color: hsl(31, 77%, 52%) ;
+}
+.two a {
+    color: hsl(184, 100%, 22%);
+}
+.three a {
+    color: hsl(179, 100%, 13%);
+}
+@media (max-width: 690px) {
+   .container {
+    height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr;
+   width: 300px;
+   height: 1000px ;
+   
+}
+.grid .child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+.one {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius:8px ;
+    border-top-right-radius:8px ;
+    border-bottom-left-radius:0px ;
+}
+.two {
+    background-color:hsl(184, 100%, 22%) ;
+}
+.three {
+    background-color:hsl(179, 100%, 13%) ;
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius:8px ;
+    border-top-right-radius:0px ;
+}
+}
